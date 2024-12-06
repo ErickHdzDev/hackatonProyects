@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "~/server/db.ts";
-import { proyects } from "~/server/db/schemas.ts";
+import { projects } from "~/server/db/schemas.ts";
 
 export async function POST(req: NextRequest) {
 
@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     }
 
     try{
-        const proyect = await db.insert(proyects).values({
+        const proyect = await db.insert(projects).values({
             name,
             description,
         })
