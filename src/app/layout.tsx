@@ -4,7 +4,7 @@ import "~/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -12,8 +12,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* @ts-expect-error Server Component */}
         <ClerkProvider>
-            {children}
+          {children}
         </ClerkProvider>
       </body>
     </html>
