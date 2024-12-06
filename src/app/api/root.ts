@@ -1,4 +1,4 @@
-import { createTRPCRouter } from "~/server/api/trpc";
+import { createTRPCRouter } from "./trpc";
 import { projectRouter } from "./routers/project";
 
 export const appRouter = createTRPCRouter({
