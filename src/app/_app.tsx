@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
+    {/* @ts-expect-error Server Component */}
     <ClerkProvider {...pageProps}>
       <SignedOut>
         <SignInButton />
