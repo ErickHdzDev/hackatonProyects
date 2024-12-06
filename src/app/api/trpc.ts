@@ -7,7 +7,7 @@ export const createContext = (opts: CreateNextContextOptions) => {
     return {};
 }
 
-const t = initTRPC.context<typeof createContext>().create({
+const createTRPCRouter = initTRPC.context<typeof createContext>().create({
     errorFormatter({ shape, error }) {
       if (error.cause instanceof ZodError) {
         return {
@@ -22,5 +22,5 @@ const t = initTRPC.context<typeof createContext>().create({
     },
 });
 
-export const router = t.router;
-export const publicProcedure = t.procedure;
+export const router = createTRPCRouter;
+export const publicProcedure = createTRPCRouter.procedure;
