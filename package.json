@@ -25,6 +25,7 @@
     "@t3-oss/env-nextjs": "^0.10.1",
     "@trpc/client": "11.0.0-rc.657",
     "@trpc/server": "11.0.0-rc.657",
+    "@types/react": "^19.0.1",
     "dotenv": "^16.4.7",
     "drizzle-kit": "^0.29.1",
     "drizzle-orm": "^0.37.0",
@@ -38,7 +39,6 @@
   "devDependencies": {
     "@types/eslint": "^8.56.10",
     "@types/node": "^20.14.10",
-    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
